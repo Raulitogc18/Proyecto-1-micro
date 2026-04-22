@@ -119,7 +119,7 @@ void leer_botones(){
         last = ticks;
     }
 
-    // 🔥 botón lento (PC7 - D9)
+    //  botón lento (PC7 - D9)
     if(GPIOC->IDR & (1<<7)){
         if(velocidad > 1) velocidad--;
         last = ticks;
